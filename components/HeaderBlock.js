@@ -1,19 +1,18 @@
-app.component('header-block', {
-    template:
+app.component("header-block", {
+  template:
     /*html*/
     `
     <div class="headerBlock">
         <img :src="mainImg" alt="nature path image">
         <div class="headerTextBlock">
-            <h1>{{ entityName }}</h1>
+            <h1><span class='secondary-font'>RENAISSANCE</span> <br/>SolutionS</h1>
             <p>healing minds, restoring lives</p>
         </div>
     </div>
     `,
-    data() {
-        return {
-            mainImg: '../images/naturePath.jpg',
-            entityName: 'Renaissance Solutions',
-        }
-    }
-})
+  data() {
+    return {
+      mainImg: "../images/naturePath.jpg",
+    };
+  },
+});
