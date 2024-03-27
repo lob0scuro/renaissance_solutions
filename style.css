@@ -104,6 +104,7 @@ nav ul li a:hover {
 
 .headerBlock {
   position: relative;
+  transform: translateY(4px);
 }
 
 .headerBlock img {
@@ -159,23 +160,62 @@ nav ul li a:hover {
   }
 }
 
-/*Service Card*/
+/*Service tabs*/
 .service-nav {
+  background-color: #333d29;
+  font-size: 1.2rem;
+}
+.service-nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   font-family: var(--mainFontFamily);
-  /* border: 1px solid blue; */
-  background-color: #333d29;
-  transform: translateY(-4px);
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
 }
+
+/*Service sections*/
 
 .serviceCard {
   width: 33%;
-  /* border: 1px solid red; */
-}
-.serviceCard h5 {
   font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px;
+  margin: 10px;
+}
+.serviceCard.active {
+  color: #4c8e60;
+}
+.serviceCard:hover {
+  color: #376d47;
+}
+.serviceCard a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-content {
+  border: 1px solid transparent;
+  /* display: none; */
+}
+
+.service-content img {
+  width: 100%;
+  height: 40svh;
+  aspect-ratio: 1/1;
+}
+
+[data-tab-target] {
+  list-style: none;
   color: var(--primaryWhite);
+  cursor: pointer;
+}
+
+[data-tab-content] {
+  display: none;
+}
+.active[data-tab-content] {
+  display: block;
 }

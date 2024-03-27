@@ -26,22 +26,21 @@
       <navbar></navbar>
       <header-block></header-block>
       <div class="service-nav">
-        <service-card
-          v-for="(card, index) in cards"
-          :service="card.title"
-          :icon="card.icon"
-        ></service-card>
+        <service-tab :cards="cards"></service-tab>
       </div>
-      <!-- <banner text="Jimmy Trahan" bg="green"></banner> -->
+      <div class="service-content-block">
+        <services-content :cards="cards"></services-content>
+      </div>
     </div>
     <!--import Vue app instance-->
     <script src="main.js"></script>
     <!--import components-->
     <script src="./components/Navbar.js"></script>
     <script src="./components/HeaderBlock.js"></script>
-    <script src="./components/ServiceCard.js"></script>
+    <script src="./components/ServiceTab.js"></script>
     <script src="./components/Button.js"></script>
     <script src="./components/Banner.js"></script>
+    <script src="./components/ServicesContent.js"></script>
 
     <!--mount application to div-->
     <script>
