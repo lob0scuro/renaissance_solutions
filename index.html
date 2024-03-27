@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--import style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--import fontawesome-->
+    <script src="https://kit.fontawesome.com/32fa155dce.js" crossorigin="anonymous"></script>
+    <!--import Vue CDN-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <navbar></navbar>
+        <header-block></header-block>
+        <services-offered></services-offered>
+        
+    </div>
+    <!--import Vue app instance-->
+    <script src="main.js"></script>
+    <!--import components-->
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/HeaderBlock.js"></script>
+    <script src="./components/ServicesOffered.js"></script>
+    <script src="./components/Button.js"></script>
+
+    <!--mount application to div-->
+    <script>
+        const mountedApp = app.mount("#app")
+    </script>
+</body>
+</html>
