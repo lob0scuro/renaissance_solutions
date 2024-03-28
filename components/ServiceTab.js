@@ -6,7 +6,7 @@ app.component("service-tab", {
     /*html*/
     `
   <ul>
-    <li v-for="(card, index) in cards" :key="index" :data-tab-target="'#' + card.url" class="serviceCard" :class="{ 'active' : index === 0 }" @click="toggleNav()"><a :href="'#' + card.url">{{ card.title }}</a></li>
+    <li v-for="(card, index) in cards" :key="index" :data-tab-target="'#' + card.url" class="serviceCard" :class="{ 'active' : index === 0 }" @click="toggleNav()">{{ card.title }}</li>
   </ul>
   `,
   data() {
