@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=East+Sea+Dokdo&family=Luckiest+Guy&family=Nothing+You+Could+Do&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <!--import fontawesome-->
@@ -25,16 +25,39 @@
     <div id="app">
       <navbar></navbar>
       <header-block></header-block>
-      <div class="service-nav">
+      <div class="service-nav" id="services">
         <service-tab :cards="cards"></service-tab>
       </div>
       <div class="service-content-block">
         <services-content :cards="cards"></services-content>
       </div>
-      <div class="people-block">
-        <h3>Who are we?</h3>
+      <div class="people-block" id="people">
+        <h3>Meet the Team</h3>
         <div class="peopleContentBlock">
           <peoples :persons="persons"></peoples>
+        </div>
+      </div>
+      <div id="about" class="about">
+        <h2>
+          Ready to begin your journey to better mental health?<br />
+          Follow these simple steps to complete our
+          <a href="https://www.linkedin.com/company/rslcla/" target="_blank"
+            >intake form.</a
+          ><i class="fa-solid fa-arrow-pointer"></i>
+        </h2>
+        <div class="aboutContent">
+          <img src="./images/cavern1.jpg" alt="" />
+          <ol>
+            <li>Lorem sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit consectetur.</li>
+            <li>Lorem ipsum dolor sit amet adipisicing.</li>
+            <li>Lorem ipsum sit amet.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem sit adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+          </ol>
+          <img src="./images/cavern.jpg" alt="" />
         </div>
       </div>
     </div>
