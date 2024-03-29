@@ -1,6 +1,9 @@
 const app = Vue.createApp({
   data() {
     return {
+      entity: "Renaissance Solutions",
+      address: "1924 Southwood Dr, Lake Charles, LA 70605",
+      tel: "(337) 240-8162",
       cards: [
         {
           title: "Psychotherapy",

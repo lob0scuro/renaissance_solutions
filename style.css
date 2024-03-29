@@ -362,3 +362,10 @@ nav ul li a:hover {
   width: 33%;
   height: auto;
 }
+
+/*Footer*/
+#footer {
+  background-color: var(--secondaryGreen);
+  color: var(--primaryWhite);
+  padding: 3rem;
+}
