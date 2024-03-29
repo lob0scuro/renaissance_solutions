@@ -79,7 +79,7 @@ nav {
   box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
 }
 nav img {
-  width: 125px;
+  width: 90px;
   height: auto;
 }
 nav ul {
@@ -262,4 +262,52 @@ nav ul li a:hover {
 }
 .active[data-tab-content] {
   display: block;
+}
+
+
+/*People Section*/
+
+.peopleContentBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.personBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.personBlock:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.personBlock img {
+  aspect-ratio: 1/1;
+  border: 2px solid goldenrod;
+}
+
+.personBlurb {
+  width: 33%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--primaryWhite);
+  padding: 5px;
+  text-align: center;
+}
+.personBlurb h5 {
+  font-size: 1.2rem;
+}
+
+.people-block {
+  border: 4px solid var(--secondaryGreen);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/treeLine.jpg);
+  background-size: cover;
+
+}
+.people-block h3 {
+  text-align: center;
+  font-size: 3rem;
 }

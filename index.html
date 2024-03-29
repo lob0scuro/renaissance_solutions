@@ -33,7 +33,9 @@
       </div>
       <div class="people-block">
         <h3>Who are we?</h3>
-        <p>{{ fullName }}</p>
+        <div class="peopleContentBlock">
+          <peoples :persons="persons"></peoples>
+        </div>
       </div>
     </div>
     <!--import Vue app instance-->
@@ -45,6 +47,7 @@
     <script src="./components/Button.js"></script>
     <script src="./components/Banner.js"></script>
     <script src="./components/ServicesContent.js"></script>
+    <script src="./components/Peoples.js"></script>
 
     <!--mount application to div-->
     <script>
