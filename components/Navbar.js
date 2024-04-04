@@ -3,12 +3,14 @@ app.component('navbar', {
     /*html*/
     `<nav>
         <img :src='logoImg' alt='nature path photo'>
-        <ul>
+        <i class="fa-solid fa-bars" @click.prevent="toggleNav"></i>
+        <ul v-if="navOpen">
             <li v-for="(link, index) in links" :key='index'><a :href="link.url">{{link.text}}</a></li>
         </ul>
     </nav>`,
 data() {
     return {
+        navOpen: false,
         entityName: "Renaissance Solutions",
         logoImg: '../images/logo.jpeg',
         links: [
@@ -17,6 +19,11 @@ data() {
             {text: 'People', url: '#people'},
             {text: 'About', url: '#about'},
         ]
+    }
+},
+methods: {
+    toggleNav() {
+        this.navOpen = !this.navOpen
     }
 }
 })
