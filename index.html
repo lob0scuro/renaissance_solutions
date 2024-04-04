@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--import stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!--import google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=East+Sea+Dokdo&family=Luckiest+Guy&family=Nothing+You+Could+Do&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--import fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/32fa155dce.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Renaissance Solutions</title>
+    <!--import vuejs-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <Navigation />
+    </div>
+    <main>
+      <section id="header">
+        <div class="container">
+          <img src="images/naturePath.jpg" alt="nature path image" />
+          <div class="textBox">
+            <h1>
+              <span class="secondary-font">RENAISSANCE</span> <br />SolutionS
+            </h1>
+            <p>healing minds, restoring lives</p>
+          </div>
+        </div>
+      </section>
+      <section id="service">
+        <div class="tabs">
+          <input
+            type="radio"
+            id="psychotherapy"
+            name="serviceTabs"
+            checked="checked"
+          />
+          <label for="psychotherapy">Psychotherapy</label>
+          <div class="tab">
+            <h2>Psychotherapy</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+              nostrum voluptas atque modi provident deserunt doloremque. Aperiam
+              ipsum, ex numquam unde, qui veniam itaque tempore recusandae,
+              nihil laborum repudiandae. Laudantium odio nisi ex cumque quod.
+            </p>
+          </div>
+          <input type="radio" id="psychmedmngmt" name="serviceTabs" />
+          <label for="psychmedmngmt">Psychiatric Medication Management</label>
+          <div class="tab">
+            <h2>Psychiatric Medication Management</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+              nostrum voluptas atque modi provident deserunt doloremque. Aperiam
+              ipsum, ex numquam unde, qui veniam itaque tempore recusandae,
+              nihil laborum repudiandae. Laudantium odio nisi ex cumque quod.
+            </p>
+          </div>
+          <input type="radio" id="aba" name="serviceTabs" />
+          <label for="aba">Applied Behavioral Analysis</label>
+          <div class="tab">
+            <h2>Applied Behavioral Analysis</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+              nostrum voluptas atque modi provident deserunt doloremque. Aperiam
+              ipsum, ex numquam unde, qui veniam itaque tempore recusandae,
+              nihil laborum repudiandae. Laudantium odio nisi ex cumque quod.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--import app-->
+    <script src="main.js"></script>
+    <!--import components-->
+    <script src="components/Navbar.js"></script>
+    <!--mount application-->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
+</html>

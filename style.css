@@ -1,0 +1,156 @@
+:root {
+  --primaryWhite: #f4f4f4;
+  --secondaryGreen: #4c8e60;
+  --mainFontFamily: "Dosis", sans-serif;
+  --secondaryFontFamily: "Roboto", sans-serif;
+  --darkGreen: #333d29;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  font-family: var(--mainFontFamily);
+  background-color: var(--primaryWhite);
+  color: #000;
+  position: relative;
+}
+
+#app {
+  width: 100%;
+  height: auto;
+}
+
+/*UTILS*/
+.secondary-font {
+  font-family: var(--secondaryFontFamily);
+}
+
+/*Navbar*/
+nav {
+  margin: 0;
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primaryWhite);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav img {
+  width: 100px;
+  height: auto;
+}
+nav i {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: var(--secondaryGreen);
+  border: 2px solid #888;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.nav-links {
+  margin: 0 auto;
+  width: 100%;
+}
+.nav-links ul {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  font-family: var(--secondaryFontFamily);
+}
+.nav-links ul li a {
+  color: var(--secondaryGreen);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.nav-links ul li a:hover {
+  text-decoration: 3px underline;
+  text-underline-offset: 5px;
+}
+
+/*Header*/
+
+#header .container {
+  position: relative;
+}
+
+#header .container img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.7);
+}
+.textBox {
+  position: absolute;
+  bottom: 10%;
+  left: 12%;
+  color: var(--primaryWhite);
+  text-align: center;
+  text-shadow: -2px 1px 15px;
+}
+.textBox h1 {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0;
+  font-weight: 300;
+}
+
+.textBox h1 span {
+  /*Renaissance*/
+  font-size: 1rem;
+  font-weight: 500;
+}
+.textBox p {
+  text-shadow: none;
+}
+
+/*Services*/
+
+#service {
+  background: var(--darkGreen);
+  color: var(--primaryWhite);
+}
+
+#service .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs label {
+  background-color: var(--secondaryGreen);
+  font-weight: 600;
+  font-size: 1rem;
+  width: 33%;
+  align-self: stretch;
+}
+
+.tabs .tab {
+  width: 100%;
+  padding: 20px;
+  order: 1;
+  display: none;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.tabs input[type="radio"]:checked + label {
+  /* background: var(--darkGreen); */
+  background: transparent;
+}
