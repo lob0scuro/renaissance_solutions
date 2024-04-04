@@ -12,7 +12,7 @@ app.component("header-block", {
     `,
   data() {
     return {
-      mainImg: "../images/naturePath.jpg",
+      mainImg: "./images/naturePath.jpg",
     };
   },
 });
