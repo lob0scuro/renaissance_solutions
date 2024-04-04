@@ -12,7 +12,7 @@ data() {
     return {
         navOpen: false,
         entityName: "Renaissance Solutions",
-        logoImg: '../images/logo.jpeg',
+        logoImg: './images/logo.jpeg',
         links: [
             {text: 'Home', url: 'index.html'},
             {text: 'Services', url: '#services'},
