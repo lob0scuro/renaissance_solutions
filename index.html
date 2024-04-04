@@ -38,55 +38,18 @@
         </div>
       </section>
       <section id="service">
-        <div class="tabs">
-          <input
-            type="radio"
-            id="psychotherapy"
-            name="serviceTabs"
-            checked="checked"
-          />
-          <label for="psychotherapy">Psychotherapy</label>
-          <div class="tab">
-            <h2>Psychotherapy</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-              nostrum voluptas atque modi provident deserunt doloremque. Aperiam
-              ipsum, ex numquam unde, qui veniam itaque tempore recusandae,
-              nihil laborum repudiandae. Laudantium odio nisi ex cumque quod.
-            </p>
-          </div>
-          <input type="radio" id="psychmedmngmt" name="serviceTabs" />
-          <label for="psychmedmngmt">Psychiatric Medication Management</label>
-          <div class="tab">
-            <h2>Psychiatric Medication Management</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-              nostrum voluptas atque modi provident deserunt doloremque. Aperiam
-              ipsum, ex numquam unde, qui veniam itaque tempore recusandae,
-              nihil laborum repudiandae. Laudantium odio nisi ex cumque quod.
-            </p>
-          </div>
-          <input type="radio" id="aba" name="serviceTabs" />
-          <label for="aba">Applied Behavioral Analysis</label>
-          <div class="tab">
-            <h2>Applied Behavioral Analysis</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-              nostrum voluptas atque modi provident deserunt doloremque. Aperiam
-              ipsum, ex numquam unde, qui veniam itaque tempore recusandae,
-              nihil laborum repudiandae. Laudantium odio nisi ex cumque quod.
-            </p>
-          </div>
-        </div>
+        <service-tabs></service-tabs>
       </section>
     </main>
     <!--import app-->
     <script src="main.js"></script>
     <!--import components-->
+    <script src="components/ServiceTabs.js"></script>
     <script src="components/Navbar.js"></script>
     <!--mount application-->
     <script>
       const mountedApp = app.mount("#app");
+      const mountedApp2 = app2.mount('#service')
     </script>
   </body>
 </html>

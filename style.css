@@ -47,7 +47,7 @@ nav {
   right: 0;
 }
 nav img {
-  width: 100px;
+  width: 75px;
   height: auto;
 }
 nav i {
@@ -85,6 +85,7 @@ nav i {
 
 #header .container {
   position: relative;
+  top: 4px;
 }
 
 #header .container img {
@@ -119,14 +120,16 @@ nav i {
 /*Services*/
 
 #service {
-  background: var(--darkGreen);
+  background: var(--secondaryGreen);
   color: var(--primaryWhite);
 }
 
-#service .tabs {
+.tabs {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  background-color: var(--darkGreen);
+
 }
 .tabs input[type="radio"] {
   display: none;
@@ -136,7 +139,9 @@ nav i {
   font-weight: 600;
   font-size: 1rem;
   width: 33%;
+  padding: 5% 0;
   align-self: stretch;
+  text-align: center;
 }
 
 .tabs .tab {
@@ -144,6 +149,7 @@ nav i {
   padding: 20px;
   order: 1;
   display: none;
+  /* background-color: var(--darkGreen); */
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
@@ -151,6 +157,6 @@ nav i {
 }
 
 .tabs input[type="radio"]:checked + label {
-  /* background: var(--darkGreen); */
-  background: transparent;
+  background: var(--darkGreen);
+  /* background: transparent; */
 }
