@@ -2,7 +2,7 @@ app.component('navbar', {
     template:
     /*html*/
     `<nav>
-        <img :src='logoImg' alt='nature path photo'>
+        <img :src='logoImg' alt='renaissance solution logo'>
         <i class="fa-solid fa-bars" @click.prevent="toggleNav"></i>
         <ul v-if="navOpen">
             <li v-for="(link, index) in links" :key='index'><a :href="link.url">{{link.text}}</a></li>

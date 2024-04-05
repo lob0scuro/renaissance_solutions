@@ -23,6 +23,7 @@ body {
 }
 @media only screen and (max-device-width: 500px) {
   body {
+    width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
   }
@@ -128,7 +129,7 @@ nav i {
 
 .headerBlock img {
   width: 100%;
-  height: 75svh;
+  height: 100%;
   filter: brightness(0.7);
 }
 .headerTextBlock {
@@ -312,12 +313,26 @@ nav i {
 }
 
 @media only screen and (max-device-width: 500px) {
+  
   .service-content p i {
     font-size: 1.5rem;
+    color: var(--primaryWhite);
   }
   .service-content p {
     font-size: 0.8rem;
     font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--primaryWhite);
+  }
+  .service-content p:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  #serviceContentButton {
+    font-size: 0.8rem;
+    padding: 10px 0;
+    background-color: var(--darkGreen);
+    color: var(--secondaryGreen);
   }
 }
 
@@ -377,11 +392,15 @@ nav i {
 
 @media only screen and (max-device-width: 500px) {
   .people-block h3 {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding: 5% 0;
+    text-align: center;
+    margin: 0;
   }
 
   .personBlock img {
-    height: 80%;
+    height: 90%;
   }
   .personBlurb {
     height: fit-content;
