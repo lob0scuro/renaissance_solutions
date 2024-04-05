@@ -463,7 +463,7 @@ nav i {
   }
   .aboutContent {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .aboutContent img {
     height: 150px;
