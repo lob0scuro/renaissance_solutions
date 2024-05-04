@@ -16,16 +16,17 @@ body {
 }
 
 header {
-  padding: 6% 0;
+  padding: 4% 0;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
   padding: 0 5%;
   list-style: none;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 500;
 }
 nav ul a {
@@ -48,14 +49,11 @@ nav ul a:hover {
   align-items: center;
 }
 
-#heroContainer h1 {
-  font-size: 3.6rem;
-}
-
 .btn-block {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 350px;
 }
 
 #bt1 {
@@ -71,4 +69,23 @@ nav ul a:hover {
 .service-btn {
   padding: 15px;
   border: none;
+  height: 80px;
+}
+
+/*PARALLEX*/
+#parallax #treelineImage {
+  background-image: url("images/treeLine.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+#parallax h1 {
+  font-size: 3.6rem;
+  padding-top: 10%;
+  color: #333d29;
+  margin: 0;
+  /* position: absolute; */
 }
