@@ -15,13 +15,15 @@ body {
   text-align: center;
 }
 
+/*Header + Nav*/
+
 header {
-  padding: 4% 0;
+  padding: 25px 0;
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 30px;
   padding: 0 5%;
@@ -39,31 +41,59 @@ nav ul a:hover {
   transform: scale(1.2);
 }
 
-#hero #heroContainer {
+/*HERO*/
+#hero {
+  padding: 5%;
+  height: auto;
+}
+
+#heroContainer {
   width: 100%;
-  height: 90svh;
-  /* background-color: var(--darkGreen); */
+  /* background-color: #c2c2c2; */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+  justify-content: space-between;
   align-items: center;
+}
+
+h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  /* padding-top: 10%; */
+  color: #0a0e0e;
+  margin: 0;
+  line-height: 0.8;
+  /* height: 80svh; */
+  width: 75%;
+
+  background-image: url("images/cavern.jpg");
+  background-size: 110%;
+  background-position: center bottom;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-clip: text;
+  color: transparent;
 }
 
 .btn-block {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 350px;
+  width: 25%;
 }
 
 #bt1 {
-  border-radius: 35px 0 0 35px;
+  border-radius: 0;
+  width: 100%;
 }
 #bt2 {
   grid-area: bt2;
+  width: 100%;
 }
 #bt3 {
-  border-radius: 0 35px 35px 0;
+  border-radius: 0;
+  width: 100%;
 }
 
 .service-btn {
@@ -73,19 +103,3 @@ nav ul a:hover {
 }
 
 /*PARALLEX*/
-#parallax #treelineImage {
-  background-image: url("images/treeLine.jpg");
-  background-position: bottom;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
-}
-
-#parallax h1 {
-  font-size: 3.6rem;
-  padding-top: 10%;
-  color: #333d29;
-  margin: 0;
-  /* position: absolute; */
-}
